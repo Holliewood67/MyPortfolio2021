@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">   
+</head>
+<body class="text-center text-light bg-dark-grad">
+<div class="global-container">
+      <header>
+        {{!-- Nav Bar --}}
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item border-bottom border-light rounded">
+                <a class="nav-link text-light active bg-secondary" href="/">Home</a>
+              </li>
+              <li class="nav-item border-bottom border-light rounded">
+                <a class="nav-link text-light" href="portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item border-bottom border-light rounded">
+                <a class="nav-link text-light" href="https://github.com/Holliewood67" target="_blank">Github</a>
+              </li>
+              <li class="nav-item border-bottom border-light rounded">
+                  <a class="nav-link text-light" href="https://www.linkedin.com/in/ethan-cantrell-50b887199/" target="_blank">LinkedIn</a>
+              </li>
+              <li class="nav-item border-bottom border-light rounded">
+                  <a class="nav-link text-light" href="contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main role="main">
+        {{!-- About Me/Introduction Segment --}}
+        <section class="about-me">
+          <div class="about-me m-5">
+              <h1>Hello</h2>
+              <h2>My name is Ethan Cantrell</h3>
+              <h5 class="m-2 p-3 border-bottom border-top border-light">I am a full stack web developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores enim reiciendis sint impedit accusantium harum nisi maxime libero ratione, debitis neque magni, at molestiae perspiciatis porro ipsum amet labore quas.</h5>
+          </div>
+        </section>
+        {{!-- My Services section --}}
+        <section class="my-services">
+          <div class="m-5" id="services" >
+            <h2>What I Offer</h3>
+            <div class="card-container d-flex flex-wrap justify-content-around">
+                <div class="card card-service m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 15rem;">
+                  <img class="card-img-top p-1 border-bottom border-dark" src="/images/responsive-design.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Responsive Design</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 15rem;">
+                  <img class="card-img-top p-3 border-bottom border-dark" src="/images/speech-bubble.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Clear Communication</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 15rem;">
+                  <img class="card-img-top p-3 border-bottom border-dark" src="/images/images.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Scalability</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 15rem;">
+                  <img class="card-img-top p-3 border-bottom border-dark" src="/images/fast.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Fast Loading</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 15rem;">
+                  <img class="card-img-top p-3 border-bottom border-dark" src="/images/innovation.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Modern Aesthetics</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+            </div>
+          </div>          
+        </section>
+        {{!-- My Skills section --}}
+        <section class="my-skills">
+          <div class="skills-container">
+            <h3>My Skills</h3>
+            <div class="card-container d-flex flex-wrap justify-content-around m-5">
+                <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/html.png" alt="Card image cap">
+                    </div>
+                    <div class="col ">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">HTML</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/css.png" alt="Card image cap">
+                    </div>
+                    <div class="col">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">CSS</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/bootstrap.png" alt="Card image cap">
+                    </div>
+                    <div class="col">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">Bootstrap</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/javascript.png" alt="Card image cap">
+                    </div>
+                    <div class="col">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">Javascript</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/react.png" alt="Card image cap">
+                    </div>
+                    <div class="col">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">React</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/express.png" alt="Card image cap">
+                    </div>
+                    <div class="col">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">Express</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card card-skill m-3 bg-light-grad text-dark mb-5 border border-light rounded">
+                  <div class="row no-gutters p-2">
+                    <div class="col-auto">
+                      <img class="card-img-top" src="/images/mongo.png" alt="Card image cap">
+                    </div>
+                    <div class="col">
+                      <div class="card-block p-2">
+                        <h5 class="card-title">MongoDB</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <div>{{test}}</div>
+        {{!-- My recent projects --}}
+        <section class="recent-projects"></section>
+        {{!-- Contact Me form --}}
+        <section class="contact-me"></section>
+          
+
+      </main>
+
+      <footer>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+      </footer>
+</div>
+</body>
+</html>
