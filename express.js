@@ -5,17 +5,6 @@ const passport = require('passport');
 const session = require('express-session');
 require('dotenv').config();
 
-//HTTPS Configuration
-const https = require('https');
-const fs = require('fs');
-const httpsServer = https.createServer({
-    key: fs.readFileSync('/etc/letsencrypt/live/ethancantrell.dev/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/ethancantrell.dev/fullchain.pem'),
-  }, app);
-
-//HTTP Configuration
-const http = require('http');
-const httpServer = http.createServer(app);
 // Connect to database
 mongoose.connect('mongodb://localhost/portfolio-projects', { useNewUrlParser: true, useUnifiedTopology: true  }, (err, data) => {
     if (err){
@@ -67,6 +56,19 @@ const PORT = process.env.PORT || 5000;
 // app.listen(PORT, () => {
 //     console.log(`Server listening on port ${PORT}`);
 // })
+
+//HTTPS Configuration
+const https = require('https');
+const fs = require('fs');
+const httpsServer = https.createServer({
+    key: fs.readFileSync('/etc/letsencrypt/live/ethancantrell.dev/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/ethancantrell.dev/fullchain.pem'),
+  }, app);
+
+//HTTP Configuration
+const http = require('http');
+const httpServer = http.createServer(app);
+
 httpsServer.listen(443, () => {
     console.log('HTTPS Server running on port 443');
 });
