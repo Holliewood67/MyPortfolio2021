@@ -9,8 +9,8 @@ require('dotenv').config();
 const https = require('https');
 const fs = require('fs');
 const httpsServer = https.createServer({
-    key: fs.readFileSync('../etc/letsencrypt/live/my_api_url/privkey.pem'),
-    cert: fs.readFileSync('../etc/letsencrypt/live/my_api_url/fullchain.pem'),
+    key: fs.readFileSync('../etc/letsencrypt/live/ethancantrell.dev/privkey.pem'),
+    cert: fs.readFileSync('../etc/letsencrypt/live/ethancantrell.dev/fullchain.pem'),
   }, app);
 
 //HTTP Configuration
