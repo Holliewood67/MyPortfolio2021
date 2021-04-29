@@ -61,35 +61,35 @@
           <div class="m-2" id="services" >
             <h2>What I Offer</h3>
             <div class="card-container d-flex flex-wrap justify-content-around">
-                <div class="card card-service m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 90%;">
+                <div class="card card-service m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-1 border-bottom border-dark" src="/images/responsive-design.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Responsive Design</h5>
                     <p class="card-text">In the current time, individuals are browsing websites from an assortment of devices including computers, phones, and tablets. These devices come in a wide variety of shapes and sizes. I center my work around this premise as a foundation in order to to design responsive websites with the ability to adjust to any screen size.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 90%;">
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/speech-bubble.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Clear Communication</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 90%;">
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/images.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Scalability</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 90%;">
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/fast.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Fast Loading</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded" style="width: 90%;">
+                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/innovation.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Modern Aesthetics</h5>
