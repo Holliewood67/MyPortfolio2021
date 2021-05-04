@@ -15,7 +15,7 @@
       <header>
         {{!-- Nav Bar --}}
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="#"><img src="/images/CheepCheepLogo.png" alt="" style="width: 50px; height: 50px;"></a>
           <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -45,55 +45,59 @@
       <main role="main">
         {{!-- About Me/Introduction Segment --}}
         <section class="about-me">
-          <div class="about-me m-2">
+          <div class="intro m-2">
               <h1>Hello</h2>
               <h2>My name is Ethan Cantrell</h3>
               <h5 class="m-2 p-3 border-bottom border-top border-light">
                 I am a full stack web developer with a strong focus on communication and quality. 
               </h5>
-              <p>
-                Some More Text Here
-              </p>
+          </div>
+          <div class="about-me-container m-2 p-3">
+            <img src="https://via.placeholder.com/300" alt="Ethan Cantrell">
+            <h3>About Me</h3>
+            <div class="about-me-content p-2 border rounded container-highlight">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi sed fuga laborum perspiciatis, inventore dolores expedita qui quisquam facere saepe nulla, accusamus, ipsum sint nostrum voluptatibus voluptatum quia tempora.</p>
+            </div>
           </div>
         </section>
         {{!-- My Services section --}}
         <section class="my-services">
           <div class="m-2" id="services" >
             <h2>What I Offer</h3>
-            <div class="card-container d-flex flex-wrap justify-content-around">
-                <div class="card card-service m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
+            <div class="card-container p-2 m-2 border rounded d-flex flex-wrap justify-content-around container-highlight">
+                <div class="card card-service  bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-1 border-bottom border-dark" src="/images/responsive-design.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Responsive Design</h5>
-                    <p class="card-text">In the current time, individuals are browsing websites from an assortment of devices including computers, phones, and tablets. These devices come in a wide variety of shapes and sizes. I plan my work with this in mind in order to design responsive websites with the ability to adjust to any screen size.</p>
+                    <p class="card-text">In this day and age, individuals are browsing websites from an assortment of devices including computers, phones, and tablets. These devices come in a wide variety of shapes and sizes. I plan my work with this in mind in order to design responsive websites with the ability to adjust to any screen size.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
+                <div class="card bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/speech-bubble.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Clear Communication</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Communication is key to the success of any project. Fast responses and clearly worded correspondance are of high priority to me. This ensures that we are always on the same page to fufill all of your requirements.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
+                <div class="card bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/images.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Scalability</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">My websites are designed with scalability in mind, meaning that my designs are easily altered to fit your needs, no matter how big or small. This also allows the easy addition of new features, as well as simplifying updates and maintenance. </p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
+                <div class="card bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/fast.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Fast Loading</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Flashy animations and transitions may look nice at a surface level, but these embellishments can easily decrease the quality of the user experience. Time is valuable, and that is why I strive to keep my websites simplistic while maintaining a sleek and modern feel.</p>
                   </div>
                 </div>
-                <div class="card m-2 bg-light-grad text-dark mb-5 border border-dark rounded">
+                <div class="card bg-light-grad text-dark mb-5 border border-dark rounded">
                   <img class="card-img-top p-3 border-bottom border-dark" src="/images/innovation.png" alt="Card image cap">
                   <div class="card-body">
                     <h5 class="card-title">Modern Aesthetics</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Sleek styling will ensure that your website stands out among the crowd while maintaining all of the modern conventions that we have come to expect. The user experience of your website will be made ideal with the use of visually pleasing color pallettes and a little bit of breathing room, among other techniques of modern design.</p>
                   </div>
                 </div>
             </div>
@@ -103,8 +107,8 @@
         <section class="my-skills">
           <div class="skills-container">
             <h3>My Skills</h3>
-            <div class="card-container d-flex flex-wrap justify-content-around m-5">
-                <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+            <div class="card-container p-2 m-2 border rounded d-flex flex-wrap justify-content-around m-5">
+                <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/html.png" alt="Card image cap">
@@ -116,7 +120,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+                <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/css.png" alt="Card image cap">
@@ -128,7 +132,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+                <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/bootstrap.png" alt="Card image cap">
@@ -140,7 +144,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+                <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/javascript.png" alt="Card image cap">
@@ -152,7 +156,7 @@
                     </div>
                   </div>
                 </div>
-               <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+               <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/react.png" alt="Card image cap">
@@ -164,7 +168,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+                <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/express.png" alt="Card image cap">
@@ -176,7 +180,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card card-skill m-2 bg-light-grad text-dark mb-5 border border-light rounded">
+                <div class="card card-skill bg-light-grad text-dark mb-5 border border-light rounded">
                   <div class="row no-gutters p-2">
                     <div class="col-auto">
                       <img class="card-img-top" src="/images/mongo.png" alt="Card image cap">
