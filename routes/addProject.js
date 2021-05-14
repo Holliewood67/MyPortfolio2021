@@ -29,10 +29,7 @@ router.post('/', (req, res, next) => {
             return;
         }
 
-        res.json({
-            confirmation: 'Success!',
-            project: Project
-        });
+        res.redirect('/admin');
     });
 });
 

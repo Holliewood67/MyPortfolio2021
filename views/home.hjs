@@ -14,27 +14,27 @@
 <div class="global-container">
       <header>
         {{!-- Nav Bar --}}
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#"><img src="/images/CheepCheepLogo.png" alt="" style="width: 50px; height: 50px;"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark border border-light">
+          <a class="navbar-brand" href="/"><img src="/images/CheepCheepLogo.png" alt=""></a>
           <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item border-bottom border-light rounded">
+              <li class="nav-item border-bottom border-light">
                 <a class="nav-link text-light active bg-secondary" href="/">Home</a>
               </li>
-              <li class="nav-item border-bottom border-light rounded">
+              <li class="nav-item border-bottom border-light">
                 <a class="nav-link text-light" href="portfolio">Portfolio</a>
               </li>
-              <li class="nav-item border-bottom border-light rounded">
+              <li class="nav-item border-bottom border-light">
                 <a class="nav-link text-light" href="https://github.com/Holliewood67" target="_blank">Github</a>
               </li>
-              <li class="nav-item border-bottom border-light rounded">
+              <li class="nav-item border-bottom border-light">
                   <a class="nav-link text-light" href="https://www.linkedin.com/in/ethan-cantrell-50b887199/" target="_blank">LinkedIn</a>
               </li>
-              <li class="nav-item border-bottom border-light rounded">
+              <li class="nav-item border-bottom border-light rounded-right">
                   <a class="nav-link text-light" href="contact">Contact</a>
               </li>
             </ul>
@@ -49,14 +49,14 @@
               <h1>Hello</h2>
               <h2>My name is Ethan Cantrell</h3>
               <h5 class="m-2 p-3 border-bottom border-top border-light">
-                I am a full stack web developer with a strong focus on communication and quality. 
+                I am an independant Full Stack Web Developer who places a strong focus on communication, quality, and accessibility for the visually impaired. 
               </h5>
           </div>
           <div class="about-me-container m-2 p-3">
             <img src="https://via.placeholder.com/300" alt="Ethan Cantrell">
             <h3>About Me</h3>
             <div class="about-me-content p-2 border rounded container-highlight">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quasi sed fuga laborum perspiciatis, inventore dolores expedita qui quisquam facere saepe nulla, accusamus, ipsum sint nostrum voluptatibus voluptatum quia tempora.</p>
+              <p></p>
             </div>
           </div>
         </section>

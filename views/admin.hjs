@@ -15,7 +15,7 @@
     <header>
         {{!-- Nav Bar --}}
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="#">Logo</a>
+          <a class="navbar-brand" href="/"><img src="/images/CheepCheepLogo.png" alt=""></a>
           <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,9 +48,6 @@
         </div>
         <ul class="list-group m-5 p-3 bg-dark-grad">
             <li class="list-group-item bg-dark-grad">
-                <a class="btn btn-light" href="addProject">Add Project</a>
-            </li>
-            <li class="list-group-item bg-dark-grad">
                 <a class="btn btn-light" href="addUser">Add User</a>
             </li>
             <li class="list-group-item bg-dark-grad">
@@ -58,9 +55,87 @@
 
             </li>
         </ul>
+        {{!-- List of portfolio projects --}}
+        <section class="portfolio-items">
+          <div class="m-1" id="services" >
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-toggle="collapse" data-target="#project-list" aria-expanded="true" aria-controls="collapseOne">
+                    View Projects
+                  </button>
+                </h2>
+                <div id="project-list" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="card-container p-2 m-2 border rounded d-flex flex-column justify-content-around align-items-center container-highlight">
+                      {{#projects}}
+                      <div class="card p-2 card-project bg-light-grad text-dark" style="width: 90%;">
+                        <div class="row no-gutters">
+                          <div class="col-md-4">
+                            <img src="/images/{{projectThumbnailPath}}" class="card-img" alt="Project Screenshot">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title border-bottom border-dark p-3">{{projectName}}</h5>
+                              <p class="card-text m-3">{{projectDescription}}</p>
+                              <a class="btn btn-dark" href="{{projectGithubLink}}" target="_blank"><small class="text-white">{{projectGithubLink}}</small></a>
+                            </div>
+                            <a class="btn btn-danger mb-1" href="/admin/removeProject/{{_id}}" target="_blank"><small class="text-white">Remove</small></a>
+                          </div>
+                        </div>
+                      </div>
+                      {{/projects}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="add-project-form">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#add-project-form" aria-expanded="true" aria-controls="collapseOne">
+                  Add Project
+                </button>
+              </h2>
+              <div id="add-project-form" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <form class="m-5" action="/addProject" method="POST">
+                    <div class="form-group project-form m-auto p-3" >
+                        <label for="projectName">Project Name</label>
+                        <input type="text" class="form-control" name="projectName" id="projectName" aria-describedby="projectNameHelp" placeholder="Enter name of project here">
+                        <small id="projectNameHelp" class="form-text text-muted">* Name is required</small>
+                    </div>
+                    <div class="form-group project-form m-auto p-3">
+                        <label for="projectDescription">Project Description</label>
+                        <input type="text" class="form-control" name="projectDescription" id="projectDescription" aria-describedby="projectNameHelp" placeholder="Enter project description here">
+                        <small id="projectDescriptionHelp" class="form-text text-muted">* Description is required</small>
+                    </div>
+                    <div class="form-group project-form m-auto p-3">
+                        <label for="projectThumbnailPath">Project Thumbnail Image Path</label>
+                        <input type="text" class="form-control" name="projectThumbnailPath" id="projectThumbnailPath" value="CheepCheepLogo.png" placeholder="Enter path for project thumbnail imahe">
+                    </div>
+                    <div class="form-group project-form m-auto p-3">
+                        <label for="projectGithubLink">Github Link</label>
+                        <input type="text" class="form-control" name="projectGithubLink" id="projectGithubLink" value="https://github.com/Holliewood67"  placeholder="Enter Github link for project here.">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+                  
+
+
       </main>
 
       <footer>
+        
       </footer>
 </div>
 </body>
